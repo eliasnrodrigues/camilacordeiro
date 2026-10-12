@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="Camila Cordeiro Arquitetura. Espaços pensados para acolher a vida, com leveza, intenção e personalidade.">
+  <title>Camila Cordeiro — Arquitetura com intenção</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f3efe6;--cream:#e7e2d7;--ink:#26392f;--muted:#69736a;--terracotta:#b87454;--line:#d5d0c5;--white:#fffdf8;--serif:Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,sans-serif;--display:Manrope,Arial,sans-serif;--max:1240px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 80px));margin-inline:auto}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--terracotta)}
+    .header{height:86px;display:flex;align-items:center;border-bottom:1px solid rgba(38,57,47,.11)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px}.brand img{width:45px;height:45px}.brand-name{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.02em;line-height:1.2}.brand-name small{display:block;font-size:9px;font-weight:500;letter-spacing:.19em;text-transform:uppercase;margin-top:4px}.nav-links{display:flex;align-items:center;gap:36px;font-size:12px;color:#4f5e54}.nav-links a:hover{color:var(--terracotta)}.nav-cta{border:1px solid var(--ink);border-radius:50px;padding:12px 18px;font-size:11px;color:var(--ink)}.nav-cta:hover{background:var(--ink);color:var(--paper)}.menu-toggle{display:none;background:none;border:0;color:var(--ink);font-size:24px}
+    .hero{padding:54px 0 80px}.hero-grid{display:grid;grid-template-columns:.91fr 1.09fr;gap:7.2%;align-items:center}.hero-copy{padding-left:7%}.hero-kicker{display:flex;align-items:center;gap:11px;margin-bottom:28px}.hero-kicker:before{content:'';width:30px;height:1px;background:var(--terracotta)}h1,h2,h3,p{margin-top:0}h1{font:400 clamp(51px,6.2vw,82px)/.99 var(--serif);letter-spacing:-.055em;max-width:520px;margin:0 0 24px}h1 em{color:var(--terracotta);font-weight:400}.hero-copy>p{max-width:385px;font-size:14px;line-height:1.85;color:var(--muted);margin-bottom:31px}.button{display:inline-flex;align-items:center;gap:25px;background:var(--ink);color:var(--white);padding:16px 19px;border-radius:2px;font-size:11px;letter-spacing:.025em;transition:background .2s,transform .2s}.button:hover{background:#375146;transform:translateY(-2px)}.button span{font-size:17px;line-height:10px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:52px;color:#72786f;font:italic 13px var(--serif)}.hero-note img{width:35px;height:35px;opacity:.78}.hero-image{height:min(610px,66vw);min-height:440px;position:relative;margin-right:3%}.hero-image:before{content:'';position:absolute;inset:-13px 13px 13px -13px;border:1px solid #cfc6b8}.hero-image img{position:relative;width:100%;height:100%;object-fit:cover;object-position:center}.image-label{position:absolute;right:-24px;bottom:36px;background:var(--white);padding:14px 18px;color:var(--ink);font-size:9px;letter-spacing:.14em;text-transform:uppercase;writing-mode:vertical-rl}
+    .intro{background:var(--ink);color:var(--paper);padding:100px 0 105px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:12%;align-items:start}.intro h2{font:400 clamp(35px,4.4vw,58px)/1.1 var(--serif);letter-spacing:-.04em;max-width:470px;margin:13px 0 0}.intro h2 em{color:#d39b7b}.intro-text{padding-top:13px}.intro-text p{color:#d0d4cb;font-size:14px;line-height:1.95;max-width:465px}.intro-sign{font:italic 19px var(--serif);color:#d39b7b;margin-top:24px}
+    .services{padding:101px 0 109px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:48px}.section-heading h2{font:400 clamp(38px,4.5vw,56px)/1 var(--serif);letter-spacing:-.04em;margin:12px 0 0}.section-heading>p{max-width:300px;font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 3px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.service{padding:29px 30px 30px 0;min-height:190px}.service+.service{border-left:1px solid var(--line);padding-left:30px}.service-num{font:italic 15px var(--serif);color:var(--terracotta)}.service h3{font:500 18px var(--display);margin:27px 0 11px;letter-spacing:-.02em}.service p{font-size:12px;line-height:1.8;color:var(--muted);max-width:285px;margin:0}
+    .gallery{padding:10px 0 110px}.gallery-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:38px}.gallery-head h2{font:400 clamp(37px,4vw,52px)/1 var(--serif);letter-spacing:-.04em;margin:11px 0 0}.gallery-head p{font-size:11px;color:var(--muted);max-width:230px;line-height:1.7;margin:0}.gallery-grid{display:grid;grid-template-columns:1fr .76fr 1fr;gap:16px;align-items:start}.gallery-card:nth-child(2){padding-top:52px}.gallery-photo{height:360px;overflow:hidden;background:var(--cream)}.gallery-card:nth-child(2) .gallery-photo{height:420px}.gallery-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.gallery-card:hover .gallery-photo img{transform:scale(1.035)}.gallery-caption{padding-top:14px;display:flex;justify-content:space-between;align-items:start}.gallery-caption span:first-child{font:400 18px var(--serif)}.gallery-caption small{font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+    .process{background:#e8e3d9;padding:91px 0 100px}.process-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.process h2{font:400 clamp(38px,4.5vw,56px)/1 var(--serif);letter-spacing:-.04em;margin:12px 0 0}.process-top p{max-width:290px;font-size:12px;line-height:1.8;color:var(--muted);margin:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step{border-top:1px solid #c9c2b6;padding-top:20px}.step-number{font:italic 15px var(--serif);color:var(--terracotta)}.step h3{font:500 17px var(--display);margin:23px 0 10px}.step p{font-size:12px;line-height:1.8;color:var(--muted);max-width:315px;margin:0}
+    .contact{padding:104px 0;background:var(--paper)}.contact-box{background:var(--ink);color:var(--paper);padding:62px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:10%;align-items:center}.contact-box h2{font:400 clamp(39px,4.8vw,61px)/1.04 var(--serif);letter-spacing:-.045em;max-width:550px;margin:13px 0 17px}.contact-box h2 em{color:#d39b7b}.contact-box p{font-size:12px;color:#d0d4cb;line-height:1.8;max-width:410px;margin:0}.contact-action{justify-self:end}.contact-action .button{background:var(--paper);color:var(--ink)}.contact-action .button:hover{background:#fff}.contact-action small{display:block;color:#b9c0b7;margin-top:14px;font-size:10px;max-width:215px;line-height:1.7}.footer{padding:27px 0 30px;border-top:1px solid var(--line)}.footer-inner{display:flex;align-items:center;justify-content:space-between}.footer-brand{display:flex;align-items:center;gap:9px;font:500 11px var(--display)}.footer-brand img{width:31px}.footer p,.footer a{margin:0;color:var(--muted);font-size:10px}.footer-right{display:flex;gap:23px}
+    @media(max-width:850px){.wrap{width:min(var(--max),calc(100% - 48px))}.hero-grid{gap:5%}.hero-copy{padding-left:0}h1{font-size:clamp(48px,8vw,70px)}.hero-image{height:62vw;min-height:400px;margin-right:8px}.nav-links{gap:20px}.gallery-photo{height:290px}.gallery-card:nth-child(2) .gallery-photo{height:340px}.contact-box{padding:50px 6%;gap:6%}}
+    @media(max-width:640px){.wrap{width:calc(100% - 40px)}.header{height:72px}.brand img{width:40px;height:40px}.menu-toggle{display:block;cursor:pointer}.nav-links{display:none;position:absolute;z-index:5;top:71px;left:0;right:0;padding:21px 22px 24px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.nav-links.is-open{display:flex}.nav-cta{padding:9px 14px}.hero{padding:33px 0 60px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-copy{padding:0}.hero-kicker{margin-bottom:21px}.hero-copy>p{font-size:13px;max-width:340px}.hero-note{margin-top:29px}.hero-image{height:112vw;min-height:370px;max-height:570px;margin:0 7px 0 12px}.image-label{right:-17px;bottom:28px}.intro{padding:66px 0 70px}.intro-grid{grid-template-columns:1fr;gap:25px}.intro h2{font-size:42px}.intro-text{padding:0}.services{padding:69px 0 75px}.section-heading{display:block;margin-bottom:29px}.section-heading h2{font-size:43px}.section-heading>p{margin-top:17px}.service-grid{grid-template-columns:1fr}.service{min-height:auto;padding:23px 0}.service+.service{border-left:0;border-top:1px solid var(--line);padding-left:0}.service h3{margin:12px 0 7px}.gallery{padding:0 0 75px}.gallery-head{display:block;margin-bottom:25px}.gallery-head h2{font-size:42px}.gallery-head p{margin-top:15px}.gallery-grid{grid-template-columns:1fr 1fr;gap:14px}.gallery-card:nth-child(2){padding-top:30px}.gallery-card:last-child{display:none}.gallery-photo,.gallery-card:nth-child(2) .gallery-photo{height:270px}.gallery-caption{display:block}.gallery-caption span:first-child{display:block;font-size:16px}.gallery-caption small{display:block;padding-top:7px}.process{padding:68px 0 74px}.process-top{display:block;margin-bottom:29px}.process h2{font-size:44px}.process-top p{margin-top:16px}.steps{grid-template-columns:1fr;gap:25px}.step h3{margin:14px 0 7px}.contact{padding:65px 0}.contact-box{padding:37px 25px;grid-template-columns:1fr;gap:25px}.contact-box h2{font-size:44px}.contact-action{justify-self:start}.footer-inner{flex-wrap:wrap;gap:17px}.footer-right{gap:15px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Camila Cordeiro Arquitetura, início"><img src="assets/owl-mark.svg" alt=""><span class="brand-name">Camila Cordeiro<small>Arquitetura</small></span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="#essencia">Essência</a><a href="#atuacao">Atuação</a><a href="#referencias">Referências</a><a href="#processo">Processo</a></div>
+      <a class="nav-cta" href="#contato">Vamos conversar&nbsp; ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker eyebrow">Arquitetura com intenção</div>
+          <h1>Espaços para viver <em>bem.</em></h1>
+          <p>Projetos que aproximam beleza e cotidiano. Ambientes feitos para acolher histórias, respeitar ritmos e refletir quem vive neles.</p>
+          <a class="button" href="#contato">Conte sua ideia <span>↗</span></a>
+          <div class="hero-note"><img src="assets/owl-mark.svg" alt=""><span>Um olhar atento aos detalhes que fazem a diferença.</span></div>
+        </div>
+        <div class="hero-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Sala serena com madeira natural, luz suave e mobiliário contemporâneo"><span class="image-label">Forma · luz · matéria</span></div>
+      </div>
+    </section>
+    <section class="intro" id="essencia">
+      <div class="wrap intro-grid">
+        <div><div class="eyebrow">A essência do projeto</div><h2>Arquitetura começa com <em>escuta.</em></h2></div>
+        <div class="intro-text"><p>Antes das plantas, existe uma conversa. Entender as pessoas, seus hábitos e aquilo que desejam sentir em casa é o primeiro passo para criar espaços verdadeiros.</p><p>Com sensibilidade para a luz, os materiais e as proporções, cada decisão constrói uma experiência mais leve, funcional e pessoal.</p><div class="intro-sign">Camila Cordeiro</div></div>
+      </div>
+    </section>
+    <section class="services wrap" id="atuacao">
+      <div class="section-heading"><div><div class="eyebrow">Como posso ajudar</div><h2>Ideias que ganham espaço.</h2></div><p>Da primeira conversa às escolhas que dão identidade ao ambiente, cada etapa é pensada junto com você.</p></div>
+      <div class="service-grid">
+        <article class="service"><span class="service-num">01</span><h3>Arquitetura residencial</h3><p>Planejamento de espaços que equilibram rotina, conforto e personalidade.</p></article>
+        <article class="service"><span class="service-num">02</span><h3>Interiores</h3><p>Materiais, cores, iluminação e mobiliário reunidos em uma composição coerente.</p></article>
+        <article class="service"><span class="service-num">03</span><h3>Consultoria de ambientes</h3><p>Orientação prática para transformar um espaço com escolhas mais seguras.</p></article>
+      </div>
+    </section>
+    <section class="gallery wrap" id="referencias">
+      <div class="gallery-head"><div><div class="eyebrow">Matéria e atmosfera</div><h2>Um espaço, muitas sensações.</h2></div><p>Referências visuais para explorar texturas, luz natural e combinações possíveis.</p></div>
+      <div class="gallery-grid">
+        <article class="gallery-card"><div class="gallery-photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Sala integrada em tons naturais, com luz entrando pelas janelas" loading="lazy"></div><div class="gallery-caption"><span>Luz que acolhe</span><small>Referência visual</small></div></article>
+        <article class="gallery-card"><div class="gallery-photo"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Interior de linhas limpas com madeira e tons terrosos" loading="lazy"></div><div class="gallery-caption"><span>Texturas naturais</span><small>Referência visual</small></div></article>
+        <article class="gallery-card"><div class="gallery-photo"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Detalhe de ambiente contemporâneo com acabamento em madeira" loading="lazy"></div><div class="gallery-caption"><span>Detalhe e equilíbrio</span><small>Referência visual</small></div></article>
+      </div>
+    </section>
+    <section class="process" id="processo">
+      <div class="wrap"><div class="process-top"><div><div class="eyebrow">Um caminho compartilhado</div><h2>Do desejo ao espaço.</h2></div><p>Um processo claro e próximo para que cada escolha tenha sentido do começo ao fim.</p></div>
+        <div class="steps"><article class="step"><span class="step-number">01</span><h3>Escuta e descoberta</h3><p>Conversamos sobre necessidades, referências, prioridades e a vida que acontece no espaço.</p></article><article class="step"><span class="step-number">02</span><h3>Estudo e conceito</h3><p>Organizamos possibilidades de layout, materiais e atmosfera para encontrar a direção do projeto.</p></article><article class="step"><span class="step-number">03</span><h3>Detalhamento</h3><p>As ideias amadurecem em definições cuidadosas para orientar a realização do ambiente.</p></article></div>
+      </div>
+    </section>
+    <section class="contact" id="contato"><div class="wrap"><div class="contact-box"><div><div class="eyebrow">Seu próximo capítulo</div><h2>Vamos imaginar esse espaço <em>juntos?</em></h2><p>Conte um pouco sobre o que você tem em mente. O primeiro passo pode ser uma conversa tranquila.</p></div><div class="contact-action"><a class="button" href="mailto:contato@exemplo.com.br?subject=Vamos%20conversar%20sobre%20um%20projeto">Iniciar uma conversa <span>↗</span></a><small>Este endereço de contato precisa ser atualizado antes de divulgar o site.</small></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#inicio"><img src="assets/owl-mark.svg" alt="">Camila Cordeiro · Arquitetura</a><p>Espaços com intenção, feitos para a vida.</p><div class="footer-right"><a href="#inicio">Voltar ao início ↑</a><a href="#contato">Contato</a></div></div></footer>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');
+    const menu=document.querySelector('.nav-links');
+    toggle.addEventListener('click',()=>{const open=menu.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');toggle.textContent=open?'×':'☰'});
+    menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu');toggle.textContent='☰'}));
+  </script>
+</body>
+</html>
